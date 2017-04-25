@@ -1,0 +1,15 @@
+{
+  "name": "The Beer O'Clock Clock",
+  "short_name": "TBOCC",
+  "lang": "en-US",
+  "orientation": "any",
+  "display": "standalone",
+  "theme_color": "#f0f0f0",
+  "background_color": "#f0f0f0",
+  "description": "A simple clock which tells you where in the world it is 5PM ATM",
+  "related_applications": [
+    {
+      "platform": "web"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- TODO No zoom? -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="res/manifest.json">
+
+  <link rel='stylesheet' type='text/css' href='styles/index.css'>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <script src="js/common.js"></script>
+
+  <title>The Beer O'Clock Clock</title>
+</head>
+<body onload="init(data.time, data.timeZoneData)">
+<div id="main">
+  <h1 id="title">The Beer O'Clock Clock</h1>
+  <p id="subtitle">Where in the world is it beer o'clock?</p>
+  <div id="clock" class="not-visible-start trans-ease-in-out">
+    <div id="clock-center"></div>
+    <div id="n12" class="number">12</div>
+    <div id="n3" class="number">3</div>
+    <div id="n5" class="number">B</div>
+    <div id="n6" class="number">6</div>
+    <div id="n9" class="number">9</div>
+    <div id="second-dial" class="dial"></div>
+    <div id="minute-dial" class="dial"></div>
+    <div id="hour-dial" class="dial"></div>
+  </div>
+  <p id="answer" class="not-visible-start trans-ease-in-out"  ></p>
+</div>
+<footer>
+  <span>Copyright © Christer Olsen</span>
+  <span>This project is open source on <link href="">Github</link></span>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/clock.js"></script>
+</body>
+</html>
