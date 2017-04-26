@@ -1,0 +1,147 @@
+html {
+  font-size: calc(.25vw + .5vh + 6px);
+  font-family: 'Helvetica', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #F6F513;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #FAEBD7;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+header p {
+  margin: 0;
+}
+
+.not-visible {
+  opacity: 0;
+}
+
+.trans-ease-in-out {
+  transition: ease-in 0.5s;
+}
+
+.display-none {
+  display: none;
+}
+
+#error {
+  color: #FF0000;
+  margin: 1.5rem 0 0 0;
+}
+
+#clock-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+#clock {
+  align-self: center;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  border: 1.5rem solid #000000;
+}
+
+#clock div, img {
+  position: absolute;
+}
+
+.number {
+  font-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  transform-origin: 2rem 2rem;
+}
+
+#n12 {
+  transform: translateX(11.5rem) translateY(.5rem);
+}
+
+#n3 {
+  transform: translateX(22.5rem) translateY(11.5rem);
+}
+
+#n5 {
+  height: 2rem;
+  width: 2rem;
+  transform-origin: 2rem 2rem;
+  transform: translateX(4.5rem) translateY(20.5rem);
+}
+
+#n6 {
+  transform: translateX(11.5rem) translateY(22.5rem);
+}
+
+#n9 {
+  transform: translateX(0.5rem) translateY(11.5rem);
+}
+
+#clock-center {
+  background-color: #000000;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transform-origin: 1rem 1rem;
+  transform: translateX(11.5rem) translateY(11.5rem);
+}
+
+.dial {
+  height: 0.5rem;
+  transform-origin: 1.5rem .25rem;
+  border-radius: 25%;
+}
+
+#second-dial {
+  background-color: #FF0000;
+  width: 12.5rem;
+}
+
+#minute-dial {
+  background-color: #000000;
+  width: 11rem;
+}
+
+#hour-dial {
+  background-color: #000000;
+  width: 8rem;
+}
+
+footer {
+  display: flex;
+  padding: 0 2rem;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}

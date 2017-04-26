@@ -1,4 +1,4 @@
-const init = (function () {
+const initClock = (function () {
   function fadeIn(selector) {
     document.querySelector(selector).style.opacity = 100;
   }
@@ -32,7 +32,7 @@ const init = (function () {
   }
 
   function getTransform(rotation) {
-    return 'translateX(22em) translateY(24.5em) rotate(' + rotation + 'deg)';
+    return 'translateX(11rem) translateY(12.25em) rotate(' + rotation + 'deg)';
   }
 
   function getRotation(dial, increment) {
@@ -118,4 +118,3 @@ const init = (function () {
     setAnswer(initialTime, timeZoneData);
   }
 })();
-
