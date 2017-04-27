@@ -80,7 +80,14 @@ const initClock = (function () {
   }
 
   function getCurrentTimeZoneData(time, timeZoneData) {
-    return timeZoneData[ (17 - time.getUTCHours()).toString() ];
+    const utcHours = time.getUTCHours();
+
+    if (utcHours >= 5 && utcHours <= 23) {
+      return timeZoneData[ 17 - utcHours ];
+    }
+    else {
+      return timeZoneData[ -7 - utcHours ]
+    }
   }
 
   function update(dial, timeZoneData) {

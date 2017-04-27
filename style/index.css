@@ -5,8 +5,7 @@ html {
 
 body {
   margin: 0;
-  /*background-color: #F6F513;*/
-  background-color: #db8b23;
+  background-color: #DB8B23;
 }
 
 section {
@@ -59,6 +58,10 @@ header p {
   display: flex;
   flex-direction: column;
   margin-top: 1.5rem;
+}
+
+#clock-wrapper > p {
+  font-size: 2rem;
 }
 
 #clock {
