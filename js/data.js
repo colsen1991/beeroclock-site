@@ -10,11 +10,15 @@ const initData = (function () {
 
   return function init() {
     return {
-      initialTime: new Date(),
       timeZoneData: {
+        '-11': new TimeZoneData('Niue', 'New Zealand', 'Cheers', 'English'),
+        '-10': new TimeZoneData('Honolulu', 'USA', 'Huli pau', 'Hawaiian'),
+        '-9': new TimeZoneData('Gambier Islands', 'French Polynesia', 'À votre santé', 'French  '),
+        '-8': new TimeZoneData('Adamstown', 'Pitcairn Islands', 'Cheers', 'English'),
+        '-7': new TimeZoneData('Sonora', 'Mexico', '¡Salud', 'Spanish'),
         '-6': new TimeZoneData('Mexico City', 'Mexico', '¡Salud', 'Spanish'),
         '-5': new TimeZoneData('New York', 'USA', 'Cheers!', 'English'),
-        '-4': new TimeZoneData('	Fredericton', 'Canada', 'À votre santé', 'French'),
+        '-4': new TimeZoneData('Fredericton', 'Canada', 'À votre santé', 'French'),
         '-3': new TimeZoneData('Nuuk', 'Greenland', 'Bunden i vejret eller resten i håret', 'Danish'),
         '-2': new TimeZoneData('King Edward Point', 'South Georgia and the South Sandwich Islands (SGSSI)', 'Cheers', 'English'),
         '-1': new TimeZoneData('Tasiilaq', 'Greenland', 'Kasuutta', 'Greenlandic'),
@@ -28,15 +32,11 @@ const initData = (function () {
         '7': new TimeZoneData('Hanoi', 'Vietnam', 'Chúc sức khoẻ', 'Vietnamese'),
         '8': new TimeZoneData('Taipei', 'Taiwan', 'Ho͘ ta là', 'Traditional Chinese'),
         '9': new TimeZoneData('Seoul', 'South Korea', 'Wihayeo', 'Korean'),
-        '10': new TimeZoneData('Brisbane', 'Australia', 'Cheers mate! Grab me a Fosters from the Esky in the back of my ute!', 'Australian'),
+        '10': new TimeZoneData('Brisbane', 'Australia', 'Cheers mate! Grab me a Fosters from the Esky in the back of myrusty Holden ute!', 'Australian'),
         '11': new TimeZoneData('Bougainville Island', 'Papua New Guinea', 'God blesim yu', 'Tok Pisin'),
-        '12': new TimeZoneData('Funafuti', 'Tuvalu', 'Manuia', 'Tuvaluan'),
-        '13': new TimeZoneData('Fakaofo', 'Tokelau', 'Patipati nā lima', 'Tokelauan'),
-        '14': new TimeZoneData('Line Islands', 'Kiribati', 'Marurung', 'Gilbertese'),
-        '15': new TimeZoneData('Baker Island', 'USA', 'Cheers dude', 'English'),
-        '16': new TimeZoneData('Niue', 'New Zealand', 'Cheers', 'English'),
-        '17': new TimeZoneData('Honolulu', 'USA', 'Huli pau', 'Hawaiian')
-      }
+        '12': new TimeZoneData('Funafuti', 'Tuvalu', 'Manuia', 'Tuvaluan')
+      },
+      initialTime: new Date()
     };
   }
 })();
