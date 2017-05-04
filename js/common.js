@@ -7,8 +7,6 @@ const initCommon = (function () {
     window.onerror = (messageOrEvent, source, lineNumber, colmnNumber, error) => {
       showError();
 
-      /* TODO Post error to server */
-
       return true;
     };
   }
