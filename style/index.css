@@ -81,30 +81,67 @@ header p {
   height: 2rem;
   width: 2rem;
   line-height: 2rem;
-  transform-origin: 2rem 2rem;
+  transform-origin: 1rem 1rem;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  transform-origin: 0.5rem 0.5rem;
+  border-radius: 50%;
+  background-color: #000000;
 }
 
 #n12 {
   transform: translateX(11.5rem) translateY(.5rem);
 }
 
+#n1 {
+  transform: translateX(17.5rem) translateY(2.5rem);
+}
+
+#n2 {
+  transform: translateX(21.25rem) translateY(6.75rem);
+}
+
 #n3 {
   transform: translateX(22.5rem) translateY(11.5rem);
 }
 
+#n4 {
+  transform: translateX(21.25rem) translateY(17.5rem);
+}
+
 #n5 {
+  display: block;
   height: 2rem;
   width: 2rem;
-  transform-origin: 2rem 2rem;
-  transform: translateX(4.5rem) translateY(20.5rem);
+  transform-origin: 1rem 1rem;
+  transform: translateX(17rem) translateY(20.5rem);
 }
 
 #n6 {
   transform: translateX(11.5rem) translateY(22.5rem);
 }
 
+#n7 {
+  transform: translateX(6.5rem) translateY(21.25rem);
+}
+
+#n8 {
+  transform: translateX(2.5rem) translateY(17.5rem);
+}
+
 #n9 {
   transform: translateX(0.5rem) translateY(11.5rem);
+}
+
+#n10 {
+  transform: translateX(2.75rem) translateY(6.75rem);
+}
+
+#n11 {
+  transform: translateX(6.5rem) translateY(2.5rem);
 }
 
 #clock-center {
