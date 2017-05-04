@@ -76,19 +76,19 @@ const initClock = (function () {
     return `https://www.google.com.au/maps/search/${replaceSpacesWithPlus(city)},+${replaceSpacesWithPlus(country)}`;
   }
 
-  function setAnswer(time, timeZoneData) {
+  function setAnswerAndPhrase(time, timeZoneData) {
     const answer = document.querySelector('#answer');
+    const phraseEl = document.querySelector('#phrase');
 
     if (isPastBeerOClock(time)) {
-      answer.innerText = 'It\'s well past beer o\'clock where you\'re now, mate!\nGet your drink on! Cheers!';
+      answer.innerText = 'It\'s well past beer o\'clock where you\'re now, mate!';
+      phraseEl.innerText = 'Get your drink on! Cheers!';
     } else {
       const { city, country, phrase, lang } = getCurrentTimeZoneData(time, timeZoneData);
-      answer.innerHTML = `
-        It\'s beer o\'clock in <strong><a href="${getGoogleMapsLink(city, country)}" target="_blank">${city}, ${country}</a></strong>.
-        <br>${phrase} (That\'s \"Cheers!\" in ${lang})!
-      `;
+      answer.innerHTML = `It's beer o'clock in <strong><a href="${getGoogleMapsLink(city, country)}" target="_blank">${city}, ${country}</a></strong>.`;
+      phraseEl.innerText = `${phrase} (That's "Cheers!" in ${lang})!`;
     }
-  }``
+  }
 
   function getCurrentTimeZoneData(time, timeZoneData) {
     const utcHours = time.getUTCHours();
@@ -110,7 +110,7 @@ const initClock = (function () {
       else if (!isPastBeerOClock(currentTime))
         rotate(dial, 270 + (17 * 30));
 
-      setAnswer(currentTime, timeZoneData);
+      setAnswerAndPhrase(currentTime, timeZoneData);
     } else {
       rotate(dial);
     }
@@ -119,6 +119,7 @@ const initClock = (function () {
   return function init(initialTime, timeZoneData) {
     setTimeout(() => fadeIn('#clock'), 500);
     setTimeout(() => fadeIn('#answer'), 1000);
+    setTimeout(() => fadeIn('#phrase'), 1500);
 
     getDials(initialTime, isPastBeerOClock(initialTime)).forEach(dial => {
       dial.el.style.transform = getTransform(getRotation(dial, false));
@@ -133,6 +134,6 @@ const initClock = (function () {
       }, getInitialTimeout(dial, initialTime));
     });
 
-    setAnswer(initialTime, timeZoneData);
+    setAnswerAndPhrase(initialTime, timeZoneData);
   }
 })();
