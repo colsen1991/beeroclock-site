@@ -32,7 +32,7 @@ const initData = (function () {
         '7': new TimeZoneData('Hanoi', 'Vietnam', 'Chúc sức khoẻ', 'Vietnamese'),
         '8': new TimeZoneData('Taipei', 'Taiwan', 'Ho͘ ta là', 'Traditional Chinese'),
         '9': new TimeZoneData('Seoul', 'South Korea', 'Wihayeo', 'Korean'),
-        '10': new TimeZoneData('Brisbane', 'Australia', 'Cheers mate! Grab me a Fosters from the Esky in the back of myrusty Holden ute!', 'Australian'),
+        '10': new TimeZoneData('Brisbane', 'Australia', 'Cheers mate! Grab me a Fosters from the Esky in the back of my rusty Holden ute!', 'Australian'),
         '11': new TimeZoneData('Bougainville Island', 'Papua New Guinea', 'God blesim yu', 'Tok Pisin'),
         '12': new TimeZoneData('Funafuti', 'Tuvalu', 'Manuia', 'Tuvaluan')
       },
