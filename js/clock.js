@@ -81,11 +81,11 @@ const initClock = (function () {
     const phraseEl = document.querySelector('#phrase');
 
     if (isPastBeerOClock(time)) {
-      answer.innerText = 'It\'s well past beer o\'clock where you\'re now, mate!';
+      answer.innerHTML = `<strong>It's well past beer o'clock where you're now, mate!</strong>`;
       phraseEl.innerText = 'Get your drink on! Cheers!';
     } else {
       const { city, country, phrase, lang } = getCurrentTimeZoneData(time, timeZoneData);
-      answer.innerHTML = `It's beer o'clock in <strong><a href="${getGoogleMapsLink(city, country)}" target="_blank">${city}, ${country}</a></strong>.`;
+      answer.innerHTML = `<strong>It's beer o'clock in <a href="${getGoogleMapsLink(city, country)}" target="_blank">${city}, ${country}</a></strong>.`;
       phraseEl.innerText = `${phrase} (That's "Cheers!" in ${lang})!`;
     }
   }

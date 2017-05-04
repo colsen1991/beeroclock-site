@@ -1,6 +1,6 @@
 # The Beer O'Clock Clock
 
-A simple progressive webapp that tells you where in the world it is beer o'clock at the moment.
+A simple progressive webapp that tells you where in the world it is beer o'clock (5PM) at the moment.
 
 Link to [Trello](https://trello.com/b/8eTt2jOo/the-beer-o-clock-clock).
 
