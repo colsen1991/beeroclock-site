@@ -68,6 +68,14 @@ const initClock = (function () {
 
   }
 
+  function replaceSpacesWithPlus(string) {
+    return string.replace(/\s/g, '+');
+  }
+
+  function getGoogleMapsLink(city, country) {
+    return `https://www.google.com.au/maps/search/${replaceSpacesWithPlus(city)},+${replaceSpacesWithPlus(country)}`;
+  }
+
   function setAnswer(time, timeZoneData) {
     const answer = document.querySelector('#answer');
 
@@ -75,9 +83,12 @@ const initClock = (function () {
       answer.innerText = 'It\'s well past beer o\'clock where you\'re now, mate!\nGet your drink on! Cheers!';
     } else {
       const { city, country, phrase, lang } = getCurrentTimeZoneData(time, timeZoneData);
-      answer.innerText = `It\'s beer o\'clock in ${city}, ${country}.\n${phrase} (That\'s \"Cheers!\" in ${lang})!`;
+      answer.innerHTML = `
+        It\'s beer o\'clock in <strong><a href="${getGoogleMapsLink(city, country)}" target="_blank">${city}, ${country}</a></strong>.
+        <br>${phrase} (That\'s \"Cheers!\" in ${lang})!
+      `;
     }
-  }
+  }``
 
   function getCurrentTimeZoneData(time, timeZoneData) {
     const utcHours = time.getUTCHours();

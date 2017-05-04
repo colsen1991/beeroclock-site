@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   background-color: #DB8B23;
+  color: #030303
 }
 
 section {
@@ -34,6 +35,15 @@ p {
 
 header p {
   margin: 0;
+}
+
+a {
+  color: #2F4F4F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #696969;
 }
 
 .not-visible {
