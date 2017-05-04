@@ -4,12 +4,17 @@
   "lang": "en-US",
   "orientation": "any",
   "display": "standalone",
-  "theme_color": "#f0f0f0",
-  "background_color": "#f0f0f0",
+  "theme_color": "#DB8B23",
+  "background_color": "#DB8B23",
   "description": "A simple clock which tells you where in the world it is 5PM ATM",
   "related_applications": [
     {
       "platform": "web"
     }
-  ]
+  ],
+  "icons": [{
+    "src": "res/img/favicon.ico",
+    "sizes": "48x48",
+    "type": "image/ico"
+  }]
 }
