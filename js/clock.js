@@ -1,8 +1,4 @@
 const initClock = (function () {
-  function fadeIn(selector) {
-    document.querySelector(selector).style.opacity = 100;
-  }
-
   function getDials(time, useLocalTime) {
     return [ {
       type: 'second',
@@ -23,12 +19,6 @@ const initClock = (function () {
       rotationIncrement: 30,
       rotationInterval: 3600000
     } ];
-  }
-
-  function isPastBeerOClock(time) {
-    const hour = time.getHours();
-
-    return hour < 3 || hour >= 17;
   }
 
   function getTransform(rotation) {
@@ -55,7 +45,7 @@ const initClock = (function () {
   }
 
   function shouldRotate(dial, time) {
-    return !isDialHourDial(dial) || time.getHours() !== 17 && isPastBeerOClock(time);
+    return !isDialHourDial(dial) || time.getHours() !== 17 && tools.isPastBeerOClock(time);
   }
 
   function rotate(dial, newRotation = null) {
@@ -68,60 +58,25 @@ const initClock = (function () {
 
   }
 
-  function replaceSpacesWithPlus(string) {
-    return string.replace(/\s/g, '+');
-  }
-
-  function getGoogleMapsLink(city, country) {
-    return `https://www.google.com.au/maps/search/${replaceSpacesWithPlus(city)},+${replaceSpacesWithPlus(country)}`;
-  }
-
-  function setAnswerAndPhrase(time, timeZoneData) {
-    const answer = document.querySelector('#answer');
-    const phraseEl = document.querySelector('#phrase');
-
-    if (isPastBeerOClock(time)) {
-      answer.innerHTML = `<strong>It's well past beer o'clock where you're now, mate!</strong>`;
-      phraseEl.innerText = 'Get your drink on! Cheers!';
-    } else {
-      const { city, country, phrase, lang } = getCurrentTimeZoneData(time, timeZoneData);
-      answer.innerHTML = `<strong>It's beer o'clock in <a href="${getGoogleMapsLink(city, country)}" target="_blank">${city}, ${country}</a></strong>.`;
-      phraseEl.innerText = `${phrase} (That's "Cheers!" in ${lang})!`;
-    }
-  }
-
-  function getCurrentTimeZoneData(time, timeZoneData) {
-    const utcHours = time.getUTCHours();
-
-    if (utcHours >= 5 && utcHours <= 23) {
-      return timeZoneData[ 17 - utcHours ];
-    }
-    else {
-      return timeZoneData[ -7 - utcHours ]
-    }
-  }
-
   function update(dial, timeZoneData) {
     if (isDialHourDial(dial)) {
       const currentTime = new Date();
 
       if (shouldRotate(dial, currentTime))
         rotate(dial);
-      else if (!isPastBeerOClock(currentTime))
+      else if (!tools.isPastBeerOClock(currentTime))
         rotate(dial, 270 + (17 * 30));
 
-      setAnswerAndPhrase(currentTime, timeZoneData);
+      text.setAnswerAndPhrase(currentTime, timeZoneData);
     } else {
       rotate(dial);
     }
   }
 
   return function init(initialTime, timeZoneData) {
-    setTimeout(() => fadeIn('#clock'), 500);
-    setTimeout(() => fadeIn('#answer'), 1000);
-    setTimeout(() => fadeIn('#phrase'), 1500);
+    setTimeout(() => tools.fadeIn('#clock'), 500);
 
-    getDials(initialTime, isPastBeerOClock(initialTime)).forEach(dial => {
+    getDials(initialTime, tools.isPastBeerOClock(initialTime)).forEach(dial => {
       dial.el.style.transform = getTransform(getRotation(dial, false));
 
       setTimeout(() => dial.el.style.transition = 'linear 0.5s', 1);
@@ -133,7 +88,5 @@ const initClock = (function () {
         }, dial.rotationInterval);
       }, getInitialTimeout(dial, initialTime));
     });
-
-    setAnswerAndPhrase(initialTime, timeZoneData);
   }
 })();

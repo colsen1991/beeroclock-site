@@ -12,8 +12,10 @@ const initErrorHandling = (function () {
   }
 
   return function init() {
-    window.onerror = () => {
+    window.onerror = (...err) => {
       showError();
+
+      console.error(err)
 
       return true;
     };
