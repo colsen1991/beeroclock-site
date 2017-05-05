@@ -4,12 +4,13 @@
   "description": "A progressive webapp which tells you where in the world it is beer o'clock (5PM) at the moment",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf build/ && mkdir build && cd build && mkdir js style res && cd res && mkdir img",
-    "js": "babel --presets=es2015,babili -d build/js js ",
+    "clean": "rm -rf build/ && mkdir build && cd build && mkdir js style img",
+    "js": "babel --presets=es2015,babili -d build/js js",
     "css": "cleancss -o build/style/index.css style/index.css",
     "html": "htmlmin -o build/index.html index.html",
-    "res": "cp -rf res/ build/",
-    "build": "npm run clean && npm run js && npm run css && npm run html && npm run res"
+    "img": "cp img/* build/img",
+    "other": "cp robots.txt build/ && cp manifest.json build/ && babel --presets=es2015,babili build/ sw.js",
+    "build": "npm run clean && npm run js && npm run css && npm run html && npm run img && npm run other"
   },
   "repository": {
     "type": "git",
