@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf build/ && mkdir build && cd build && mkdir js style img",
     "js": "babel --presets=es2015,babili -d build/js js",
-    "css": "cleancss -o build/style/index.css style/index.css",
+    "css": "postcss --use autoprefixer -d build/style style/index.css && cleancss -o build/style/index.css build/style/index.css",
     "html": "htmlmin -o build/index.html index.html",
     "img": "cp img/* build/img",
     "other": "cp robots.txt build/ && cp manifest.json build/ && babel --presets=es2015,babili --out-file build/sw.js sw.js",
@@ -30,11 +30,13 @@
   },
   "homepage": "https://github.com/colsen1991/beer-o-clock-clock#readme",
   "devDependencies": {
+    "autoprefixer": "^7.0.1",
     "babel-cli": "^6.24.1",
     "babel-plugin-uglify": "^1.0.2",
     "babel-preset-babili": "0.0.12",
     "babel-preset-es2015": "^6.24.1",
     "clean-css-cli": "^4.0.12",
-    "html-minifier-cli": "^0.1.0"
+    "html-minifier-cli": "^0.1.0",
+    "postcss-cli": "^3.2.0"
   }
 }
