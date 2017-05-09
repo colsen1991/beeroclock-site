@@ -201,6 +201,10 @@ a:hover {
   font-size: 1.5rem;
 }
 
+#beggars-text {
+  font-size: 1.25rem;
+}
+
 footer {
   display: flex;
   padding: 0 2rem;
