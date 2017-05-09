@@ -9,7 +9,7 @@
     "css": "postcss --use autoprefixer -d build/style style/index.css && cleancss -o build/style/index.css build/style/index.css",
     "html": "htmlmin -o build/index.html index.html",
     "img": "cp img/* build/img",
-    "other": "cp robots.txt build/ && cp manifest.json build/ && babel --presets=es2015,babili --out-file build/sw.js sw.js",
+    "other": "cp robots.txt build/ && cp manifest.json build/ && cp sitemap.xml build/ && babel --presets=es2015,babili --out-file build/sw.js sw.js",
     "build": "npm run clean && npm run js && npm run css && npm run html && npm run img && npm run other"
   },
   "repository": {
