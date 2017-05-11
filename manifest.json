@@ -9,20 +9,40 @@
   "start_url": "/",
   "description": "A webapp which tells you where in the world it is beer o'clock (5PM) at the moment",
   "icons": [{
-    "src": "img/favicon-48.png",
+    "src": "img/favicon-16x16.png",
+    "sizes": "16x16",
+    "type": "image/png"
+  },{
+    "src": "img/favicon-32x32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  },{
+    "src": "img/favicon-48x48.png",
     "sizes": "48x48",
     "type": "image/png"
+  },{
+    "src": "img/favicon-64x64.png",
+    "sizes": "64x64",
+    "type": "image/png"
   }, {
-    "src": "img/favicon-96.png",
+    "src": "img/favicon-96x96.png",
     "sizes": "96x96",
     "type": "image/png"
   }, {
-    "src": "img/favicon-192.png",
-    "sizes": "192x192",
+    "src": "img/favicon-128x128.png",
+    "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "img/favicon-144.png",
+    "src": "img/favicon-144x144.png",
     "sizes": "144x144",
     "type": "image/png"
+  }, {
+    "src": "img/favicon-152x152.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  }, {
+    "src": "img/favicon-192x192.png",
+    "sizes": "192x192",
+  "type": "image/png"
   }]
 }

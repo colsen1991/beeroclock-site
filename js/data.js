@@ -10,6 +10,7 @@ const initData = (function () {
 
   return function init() {
     return {
+      initialTime: new Date(),
       timeZoneData: {
         '-11': new TimeZoneData('Niue', 'New Zealand', 'Cheers', 'English'),
         '-10': new TimeZoneData('Honolulu', 'USA', 'Huli pau', 'Hawaiian'),
@@ -35,8 +36,7 @@ const initData = (function () {
         '10': new TimeZoneData('Brisbane', 'Australia', 'Cheers mate! Grab me a Fosters from the Esky in the back of my rusty Holden ute!', 'Australian'),
         '11': new TimeZoneData('Bougainville Island', 'Papua New Guinea', 'God blesim yu', 'Tok Pisin'),
         '12': new TimeZoneData('Funafuti', 'Tuvalu', 'Manuia', 'Tuvaluan')
-      },
-      initialTime: new Date()
+      }
     };
   }
 })();

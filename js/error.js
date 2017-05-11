@@ -2,7 +2,7 @@ const initErrorHandling = (function () {
   function showError() {
     document.querySelector('#error').style.display = 'block';
     document.querySelector('#error').style.visibility = 'visible';
-    setTimeout(() => document.querySelector('#error').style.opacity = '100', 50);
+    setTimeout(() => document.querySelector('#error').style.opacity = 1, 50);
     document.querySelector('#error').innerHTML = `
       Uh oh! It seems like an error occured...
       <br>I.e. the site might look odd, or the time calculations might be off!
@@ -15,7 +15,7 @@ const initErrorHandling = (function () {
     window.onerror = (...err) => {
       showError();
 
-      console.error(err)
+      console.error(err);
 
       return true;
     };

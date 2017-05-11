@@ -1,8 +1,9 @@
 const tools = (function () {
   return {
     fadeIn(selector) {
-      document.querySelector(selector).style.opacity = 100;
+      document.querySelector(selector).style.opacity = 1;
     },
+
     isPastBeerOClock(time) {
       const hour = time.getHours();
 

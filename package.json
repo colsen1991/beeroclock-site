@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf build/ && mkdir build && cd build && mkdir js style img",
-    "js": "babel --presets=es2015,babili -d build/js js",
+    "js": "babel --presets=es2015,babili -d build/js js && babel --presets=es2015,babili --out-file build/sw.js sw.js",
     "css": "postcss --use autoprefixer -d build/style style/index.css && cleancss -o build/style/index.css build/style/index.css",
     "html": "htmlmin -o build/index.html index.html",
     "img": "cp img/* build/img",
-    "other": "cp robots.txt build/ && cp manifest.json build/ && cp sitemap.xml build/ && babel --presets=es2015,babili --out-file build/sw.js sw.js",
+    "other": "cp robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml build/",
     "build": "npm run clean && npm run js && npm run css && npm run html && npm run img && npm run other"
   },
   "repository": {
