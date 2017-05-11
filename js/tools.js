@@ -1,5 +1,9 @@
 const tools = (function () {
   return {
+    isDev() {
+      return window.location.hostname === 'localhost';
+    },
+
     fadeIn(selector) {
       document.querySelector(selector).style.opacity = 1;
     },

@@ -1,16 +1,18 @@
 const initServiceWorker = (function () {
   return function init() {
-    if (window.location.hostname === 'localhost') {
+    if (tools.isDev()) {
       return;
     }
 
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('sw.js').then(function (registration) {
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function (err) {
-          console.log('ServiceWorker registration failed: ', err);
-        });
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.getRegistrations()
+          .then(registrations => {
+            if (!registrations[ 0 ]) {
+              setTimeout(() => popup.show('<p>Website ready for offline use.<br>Also try "Menu" > "Add to home screen"</p>', 'message', 5000), 2000);
+            }
+          })
+          .then(() => navigator.serviceWorker.register('sw.js'))
       });
     }
   };

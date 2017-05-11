@@ -1,21 +1,11 @@
 const initErrorHandling = (function () {
-  function showError() {
-    document.querySelector('#error').style.display = 'block';
-    document.querySelector('#error').style.visibility = 'visible';
-    setTimeout(() => document.querySelector('#error').style.opacity = 1, 50);
-    document.querySelector('#error').innerHTML = `
-      Uh oh! It seems like an error occured...
-      <br>I.e. the site might look odd, or the time calculations might be off!
-      <br>Worry not! I'll share a little secret with you:
-      <br><br><strong>It's always beer o'clock somewhere!</strong>
-    `;
-  }
-
   return function init() {
     window.onerror = (...err) => {
-      showError();
+      popup.show('Uh oh, error! Things might be off, sorry! Worry not; it\'s always beer o\'clock somewhere!', 'error', 10000);
 
-      console.error(err);
+      if (tools.isDev()) {
+        console.error(err);
+      }
 
       return true;
     };
