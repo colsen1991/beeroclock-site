@@ -178,10 +178,6 @@ a:hover {
   font-size: 1.5rem;
 }
 
-#beggars-text {
-  font-size: 1.25rem;
-}
-
 footer {
   display: flex;
   flex-direction: column;
