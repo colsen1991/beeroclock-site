@@ -8,7 +8,7 @@
     "js": "babel --presets=es2015,babili -d build/js js && babel --presets=es2015,babili --out-file build/sw.js sw.js",
     "basecss": "postcss --use autoprefixer -d build/style style/base.css && cleancss -o build/style/base.css build/style/base.css",
     "sitecss": "postcss --use autoprefixer -d build/style style/site.css && cleancss -o build/style/site.css build/style/site.css",
-    "html": "htmlmin -o build/index.html index.html",
+    "html": "htmlmin -o build/index.html index.html && htmlmin -o build/404.html 404.html && htmlmin -o build/5xx.html 5xx.html",
     "img": "cp img/* build/img",
     "other": "cp robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml build/",
     "build": "npm run clean && npm run js && npm run sitecss && npm run basecss && npm run html && npm run img && npm run other"
