@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
 
@@ -13,7 +13,7 @@
   <link rel="manifest" type="text/json" href="manifest.json">
   <meta name="theme-color" content="#FAEBD7">
   <meta name="application-name" content="The Beer O'Clock Clock">
-  <meta name="description" content="A webapp which tells you where in the world it is beer o'clock (5PM) at the moment">
+  <meta name="description" content="A website which tells you where in the world it is beer o'clock (5PM) at the moment">
   <meta name="mobile-web-app-capable" content="yes">
 
   <meta name="msapplication-config" content="browserconfig.xml">
@@ -31,7 +31,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="shortcut icon" href="img/favicon.ico">
 
-  <link rel='stylesheet' type='text/css' href='style/index.css'>
+  <link rel='stylesheet' type='text/css' href='style/base.css'>
+  <link rel='stylesheet' type='text/css' href='style/site.css'>
 
   <title>The Beer O'Clock Clock</title>
 </head>
@@ -41,7 +42,7 @@
     <h1>The Beer O'Clock Clock</h1>
     <p>Where in the world is it beer o'clock?</p>
   </header>
-  <div id="clock-wrapper">
+  <div id="content">
     <div id="clock" class="transparent trans-ease-in-out">
       <div id="clock-center"></div>
       <div id="n12" class="number">12</div>

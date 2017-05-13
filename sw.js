@@ -2,12 +2,15 @@
   const CACHE_NAME = 'beer-o-clock-clock-cache-v1';
   const urlsToCache = [
     '/',
-    '/style/index.css',
+    '/index.html',
+    '/style/base.css',
+    '/style/site.css',
     '/img/beer.png',
     '/js/clock.js',
-    '/js/error.js',
     '/js/data.js',
+    '/js/error.js',
     '/js/index.js',
+    '/js/popup.js',
     '/js/serviceWorker.js',
     '/js/text.js',
     '/js/tools.js'

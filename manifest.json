@@ -7,7 +7,7 @@
   "theme_color": "#FAEBD7",
   "background_color": "#DB8B23",
   "start_url": "/",
-  "description": "A webapp which tells you where in the world it is beer o'clock (5PM) at the moment",
+  "description": "A website which tells you where in the world it is beer o'clock (5PM) at the moment",
   "icons": [{
     "src": "img/favicon-16x16.png",
     "sizes": "16x16",

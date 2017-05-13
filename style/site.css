@@ -1,45 +1,5 @@
-html {
-  font-size: calc(.25vw + .5vh + 6px);
-  font-family: 'Helvetica', sans-serif;
-  color: #030303;
-}
-
 body {
-  margin: 0;
-  background-color: #DB8B23;
   text-align: center;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-header {
-  background-color: #FAEBD7;
-  padding: 1rem;
-}
-
-h1 {
-  font-family: 'Georgia', serif;
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-p {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-a {
-  color: #2F4F4F;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #696969;
 }
 
 .transparent {
@@ -47,18 +7,14 @@ a:hover {
 }
 
 .trans-ease-in-out {
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out .5s;
 }
 
-#clock-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
+#content {
   align-items: center;
 }
 
-#clock-wrapper p {
+#content p {
   margin: 1rem 0 0 0;
 }
 
@@ -84,7 +40,7 @@ a:hover {
 .dot {
   width: 1rem;
   height: 1rem;
-  transform-origin: 0.5rem 0.5rem;
+  transform-origin: .5rem .5rem;
   border-radius: 50%;
   background-color: #000000;
 }
@@ -130,7 +86,7 @@ a:hover {
 }
 
 #n9 {
-  transform: translateX(0.5rem) translateY(11.5rem);
+  transform: translateX(.5rem) translateY(11.5rem);
 }
 
 #n10 {
@@ -151,7 +107,7 @@ a:hover {
 }
 
 .dial {
-  height: 0.5rem;
+  height: .5rem;
   transform-origin: 1.5rem .25rem;
   border-radius: 25%;
   background-color: #000000;
@@ -176,17 +132,6 @@ a:hover {
 
 #phrase {
   font-size: 1.5rem;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-footer p {
-  font-size: 1rem;
 }
 
 .error {
