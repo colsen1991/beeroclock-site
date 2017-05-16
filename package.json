@@ -6,8 +6,7 @@
   "scripts": {
     "clean": "rm -rf build/ && mkdir build && cd build && mkdir js style img",
     "js": "babel --presets=es2015,babili -d build/js js && babel --presets=es2015,babili --out-file build/sw.js sw.js",
-    "basecss": "postcss --use autoprefixer -d build/style style/base.css && cleancss -o build/style/base.css build/style/base.css",
-    "sitecss": "postcss --use autoprefixer -d build/style style/site.css && cleancss -o build/style/site.css build/style/site.css",
+    "css": "postcss --use autoprefixer cssnano -d build/style --no-map style/*",
     "html": "htmlmin -o build/index.html index.html && htmlmin -o build/404.html 404.html && htmlmin -o build/50x.html 50x.html",
     "img": "cp img/* build/img",
     "other": "cp robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml build/",
