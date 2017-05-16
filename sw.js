@@ -1,5 +1,5 @@
 (function () {
-  const CACHE_NAME = 'beer-o-clock-clock-cache-v1';
+  const CACHE_NAME = 'beer-o-clock-clock-cache-v2';
   const urlsToCache = [
     '/',
     '/index.html',
