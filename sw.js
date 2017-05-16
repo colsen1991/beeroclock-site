@@ -11,7 +11,7 @@
     '/js/error.js',
     '/js/index.js',
     '/js/popup.js',
-    '/js/serviceWorker.js',
+    '/js/swRegistration.js',
     '/js/text.js',
     '/js/tools.js'
   ];
