@@ -2,7 +2,7 @@
 
 A simple website which tells you where in the world it is beer o'clock (5PM) at the moment. The site is hosted on [beeroclock.site](https://beeroclock.site/).
 
-Link to the project on Trello [Trello](https://trello.com/b/8eTt2jOo/the-beer-o-clock-clock).
+Link to the project on [Trello](https://trello.com/b/8eTt2jOo/the-beer-o-clock-clock).
 
 ---
 
