@@ -10,7 +10,8 @@
     "html": "htmlmin -o build/index.html index.html && htmlmin -o build/404.html 404.html && htmlmin -o build/50x.html 50x.html",
     "img": "cp img/* build/img",
     "other": "cp robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml build/",
-    "build": "npm run clean && npm run js && npm run css && npm run html && npm run img && npm run other"
+    "build": "npm run clean && npm run js && npm run css && npm run html && npm run img && npm run other",
+    "netlify": "npm i && npm run build"
   },
   "repository": {
     "type": "git",
