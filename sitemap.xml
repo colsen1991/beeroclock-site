@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://beeroclock.site</loc>
+    <loc>https://www.beeroclock.site</loc>
     <image:image>
-      <image:loc>https://beeroclock.site/img/beer.png</image:loc>
+      <image:loc>https://www.beeroclock.site/img/beer.png</image:loc>
       <image:caption>A beer mug</image:caption>
     </image:image>
   </url>

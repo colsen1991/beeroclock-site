@@ -27,7 +27,7 @@ const text = (function () {
       phraseEl.innerText = 'Get your drink on! Cheers!';
     } else {
       const { city, country, phrase, lang } = getCurrentTimeZoneData(time, timeZoneData);
-      answer.innerHTML = `<strong>It's beer o'clock in <a href="${getGoogleMapsLink(city, country)}" target="_blank" rel="noopener">${city}, ${country}</a></strong>.`;
+      answer.innerHTML = `<strong>It's beer o'clock in <a role="link" href="${getGoogleMapsLink(city, country)}" target="_blank" rel="noopener">${city}, ${country}</a></strong>.`;
       phraseEl.innerText = `${phrase} (That's "Cheers!" in ${lang})!`;
     }
   }

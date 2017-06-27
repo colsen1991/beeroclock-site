@@ -44,11 +44,11 @@
 </head>
 <body>
 <section>
-  <header>
+  <header role="banner">
     <h1>The Beer O'Clock Clock</h1>
     <p>Where in the world is it beer o'clock?</p>
   </header>
-  <div id="content">
+  <main role="main" id="content">
     <div id="clock" class="transparent trans-ease-in-out">
       <div id="clock-center"></div>
       <div id="n12" class="number">12</div>
@@ -56,7 +56,7 @@
       <div id="n2" class="dot"></div>
       <div id="n3" class="number">3</div>
       <div id="n4" class="dot"></div>
-      <img src="/img/beer.png" alt="A beer mug" id="n5"/>
+      <img aria-label="A beer mug" src="/img/beer.png" alt="A beer mug" id="n5"/>
       <div id="n6" class="number">6</div>
       <div id="n7" class="dot"></div>
       <div id="n8" class="dot"></div>
@@ -69,10 +69,10 @@
     </div>
     <p id="answer" class="transparent trans-ease-in-out"></p>
     <p id="phrase" class="transparent trans-ease-in-out"></p>
-  </div>
-  <footer>
+  </main>
+  <footer role="contentinfo">
     <p>Copyright © 2017 Christer Olsen</p>
-    <p>Source on <a href="https://github.com/colsen1991/beer-o-clock-clock" target="_blank" rel="noopener">GitHub</a></p>
+    <p>Source on <a role="link" href="https://github.com/colsen1991/beer-o-clock-clock" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 </section>
 <script src="js/tools.js"></script>
