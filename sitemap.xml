@@ -8,11 +8,4 @@
       <image:caption>A beer mug</image:caption>
     </image:image>
   </url>
-  <url>
-    <loc>https://www.beeroclock.site</loc>
-    <image:image>
-      <image:loc>https://www.beeroclock.site/img/beer.png</image:loc>
-      <image:caption>A beer mug</image:caption>
-    </image:image>
-  </url>
 </urlset>
