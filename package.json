@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "A website which tells you where in the world it is beer o'clock (5PM) at the moment",
   "scripts": {
-    "clean": "rm -rf build/ && mkdir build && cd build && mkdir js style img",
     "js": "babel --presets=es2015,babili -d build/js js && babel --presets=es2015,babili --out-file build/sw.js sw.js",
     "css": "postcss --use cssnano -d build/style --no-map style/*",
     "html": "htmlmin -o build/index.html index.html && htmlmin -o build/404.html 404.html && htmlmin -o build/50x.html 50x.html",
     "img": "cp img/* build/img",
-    "other": "cp robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml build/",
-    "build": "npm run clean && npm run js && npm run css && npm run html && npm run img && npm run other",
-    "netlify": "npm i && npm run build",
-    "dev": "live-server"
+    "other": "cp robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml BingSiteAuth.xml build/",
+    "prebuild": "rm -rf build/ && mkdir build && cd build && mkdir js style img",
+    "build": "npm run js && npm run css && npm run html && npm run img && npm run other",
+    "start": "live-server"
   },
   "repository": {
     "type": "git",
@@ -39,5 +38,8 @@
     "html-minifier-cli": "^0.1.0",
     "postcss-cli": "^3.2.0"
   },
-  "false": {}
+  "false": {},
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
 }
