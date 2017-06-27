@@ -38,5 +38,6 @@
     "cssnano": "^3.10.0",
     "html-minifier-cli": "^0.1.0",
     "postcss-cli": "^3.2.0"
-  }
+  },
+  "false": {}
 }
