@@ -1,5 +1,5 @@
 {
-  "name": "beer-o-clock-clock",
+  "name": "beeroclock-site",
   "version": "1.0.0",
   "description": "A website which tells you where in the world it is beer o'clock (5PM) at the moment",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/colsen1991/beer-o-clock-clock.git"
+    "url": "git+https://github.com/colsen1991/beeroclock-site.git"
   },
   "keywords": [
     "beer",
@@ -26,9 +26,9 @@
   "author": "Christer Olsen <colsen1991@gmail.com> (https://christerolsen.no)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/colsen1991/beer-o-clock-clock/issues"
+    "url": "https://github.com/colsen1991/beeroclock-site/issues"
   },
-  "homepage": "https://github.com/colsen1991/beer-o-clock-clock#readme",
+  "homepage": "https://github.com/colsen1991/beeroclock-site#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-uglify": "^1.0.2",

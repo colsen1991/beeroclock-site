@@ -1,5 +1,5 @@
 (function () {
-  const CACHE_NAME = 'beer-o-clock-clock-cache-v2';
+  const CACHE_NAME = 'beeroclock-site-cache';
   const urlsToCache = [
     '/',
     '/index.html',
