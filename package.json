@@ -8,7 +8,7 @@
     "html": "htmlmin -o build/index.html index.html && htmlmin -o build/404.html 404.html && htmlmin -o build/50x.html 50x.html",
     "img": "cp img/* build/img",
     "other": "cp robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml build/",
-    "prebuild": "rm -rf build/ && mkdir build && cd build && mkdir js style img",
+    "prebuild": "rimraf build/ && mkdir build && cd build && mkdir js style img",
     "build": "npm run js && npm run css && npm run html && npm run img && npm run other",
     "start": "live-server"
   },
@@ -36,7 +36,8 @@
     "babel-preset-es2015": "^6.24.1",
     "cssnano": "^3.10.0",
     "html-minifier-cli": "^0.1.0",
-    "postcss-cli": "^3.2.0"
+    "postcss-cli": "^3.2.0",
+    "rimraf": "^2.6.1"
   },
   "false": {},
   "dependencies": {
