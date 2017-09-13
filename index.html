@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://www.beeroclock.site">
 
   <link rel="manifest" type="text/json" href="manifest.json">
-  <meta name="theme-color" content="#FAEBD7">
+  <meta name="theme-color" content="#f9ead7">
   <meta name="application-name" content="The Beer O'Clock Clock">
   <meta name="description" content="A website which tells you where in the world it is beer o'clock (5PM) at the moment">
   <meta name="mobile-web-app-capable" content="yes">
@@ -27,16 +27,11 @@
   <meta name="msapplication-config" content="browserconfig.xml">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#FAEBD7">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#f9ead7">
   <meta name="apple-mobile-web-app-title" content="The Beer O'Clock Clock">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
   <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#db8b23">
 
-  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64x64.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
   <link rel="shortcut icon" href="/img/favicon.ico">
 
   <link rel='stylesheet' type='text/css' href='/style/base.css'>
@@ -45,12 +40,12 @@
   <title>The Beer O'Clock Clock</title>
 </head>
 <body>
-<section>
+<div>
   <header role="banner">
     <h1>The Beer O'Clock Clock</h1>
     <p>Where in the world is it beer o'clock?</p>
   </header>
-  <main role="main" id="content">
+  <main id="content">
     <div id="clock" class="transparent trans-ease-in-out">
       <div id="clock-center"></div>
       <div id="n12" class="number">12</div>
@@ -73,13 +68,11 @@
     <p id="phrase" class="transparent trans-ease-in-out"></p>
   </main>
   <footer role="contentinfo">
-    <p>Copyright © 2017 <a href="https://www.christerolsen.no" target="_blank">Christer Olsen</a></p>
+    <p>© 2017 <a href="https://www.christerolsen.no" target="_blank">Christer Olsen</a></p>
     <p>Source on <a role="link" href="https://github.com/colsen1991/beeroclock-site" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
-</section>
+</div>
 <script src="js/tools.js"></script>
-<script src="js/popup.js"></script>
-<script src="js/error.js"></script>
 <script src="js/swreg.js"></script>
 <script src="js/data.js"></script>
 <script src="js/clock.js"></script>

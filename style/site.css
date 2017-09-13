@@ -133,21 +133,3 @@ body {
 #phrase {
   font-size: 1.5rem;
 }
-
-.error {
-  color: #FF0000;
-}
-
-.message {
-  color: #FAEBD7;
-}
-
-.popup {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(0, 0, 0, .75);
-  padding: 1rem 0;
-  bottom: 0;
-  overflow: initial;
-  font-size: 2rem;
-}

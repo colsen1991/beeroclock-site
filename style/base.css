@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: #FAEBD7;
+  background-color: #f9ead7;
   padding: 1rem;
   text-align: center;
 }
@@ -36,7 +36,7 @@ p {
   font-size: 1.5rem;
 }
 
-body > section {
+body > div {
   display: flex;
   flex-direction: column;
   min-width: 320px;
@@ -44,7 +44,7 @@ body > section {
 }
 
 a {
-  color: #2F4F4F;
+  color: #2f4f4f;
   text-decoration: none;
 }
 

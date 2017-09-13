@@ -1,5 +1,3 @@
-initErrorHandling();
-
 initServiceWorker();
 
 const { initialTime, timeZoneData } = initData();

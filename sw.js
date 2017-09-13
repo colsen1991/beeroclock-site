@@ -7,9 +7,7 @@
     '/style/site.css',
     '/js/clock.js',
     '/js/data.js',
-    '/js/error.js',
     '/js/index.js',
-    '/js/popup.js',
     '/js/swreg.js',
     '/js/text.js',
     '/js/tools.js',
@@ -25,6 +23,8 @@
     '/img/favicon-144x144.png',
     '/img/favicon-152x152.png',
     '/img/favicon-192x192.png',
+    '/img/favicon-384x384.png',
+    '/img/favicon-512x512.png',
     '/img/mstile-150x150.png',
     '/img/safari-pinned-tab.svg',
   ];

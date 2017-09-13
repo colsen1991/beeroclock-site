@@ -1,6 +1,6 @@
 {
   "name": "beeroclock-site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A website which tells you where in the world it is beer o'clock (5PM) at the moment",
   "scripts": {
     "js": "babel --presets=es2015,babili -d build/js js && babel --presets=es2015,babili --out-file build/sw.js sw.js",
@@ -10,8 +10,8 @@
     "other": "cpy robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml build/",
     "prebuild": "rimraf build/ && mkdir build && cd build && mkdir js style img",
     "build": "npm run js && npm run css && npm run html && npm run img && npm run other",
-    "start": "live-server",
-    "test-live": "live-server build/"
+    "dev": "live-server",
+    "start": "npm run build && live-server build/"
   },
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
     "cssnano": "^3.10.0",
     "html-minifier-cli": "^0.1.0",
     "live-server": "^1.2.0",
-    "postcss-cli": "^4.1.0",
-    "rimraf": "^2.6.1"
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2"
   }
 }
