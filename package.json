@@ -7,7 +7,7 @@
     "css": "postcss --use cssnano -d build/style --no-map style/*",
     "html": "htmlmin -o build/index.html index.html && htmlmin -o build/404.html 404.html && htmlmin -o build/500.html 500.html",
     "img": "cpy img/* build/img",
-    "other": "cpy robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml build/",
+    "other": "cpy robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml _headers build/",
     "prebuild": "rimraf build/ && mkdir build && cd build && mkdir js style img",
     "build": "npm run js && npm run css && npm run html && npm run img && npm run other",
     "dev": "live-server",
