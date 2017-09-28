@@ -11,6 +11,6 @@ Name: Ida Leirvik.
 Name: https://www.reddit.com/user/zupzupper
 
 /* SITE */
-Last update: 2017/09/13
+Last update: 2017/09/28
 Standards: HTML5, CSS3, JavaScript.
 Software: WebStorm, git, npm, babel, autoprefixer, clean-css, html-minifier, postcss.
