@@ -1,6 +1,6 @@
 # The Beer O'Clock Clock
 
-A simple website which tells you where in the world it is beer o'clock (5PM) at the moment
+A simple website which tells you where in the world it is beer o'clock (5PM) at the moment.
 
 ---
 
