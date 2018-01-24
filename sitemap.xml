@@ -3,9 +3,5 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.beeroclock.site</loc>
-    <image:image>
-      <image:loc>https://www.beeroclock.site/img/beer.png</image:loc>
-      <image:caption>A beer mug</image:caption>
-    </image:image>
   </url>
 </urlset>

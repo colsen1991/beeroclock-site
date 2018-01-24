@@ -5,7 +5,7 @@
   "scripts": {
     "js": "babel --presets=es2015,babili -d build/js js && babel --presets=es2015,babili --out-file build/sw.js sw.js",
     "css": "postcss --use cssnano -d build/style --no-map style/*",
-    "html": "htmlmin -o build/index.html index.html && htmlmin -o build/404.html 404.html && htmlmin -o build/500.html 500.html",
+    "html": "htmlmin -o build/index.html index.html && htmlmin -o build/404.html 404.html",
     "img": "cpy img/* build/img",
     "other": "cpy robots.txt humans.txt manifest.json browserconfig.xml sitemap.xml _headers google-analytics.js build/",
     "prebuild": "rimraf build/ && mkdir build && cd build && mkdir js style img",
