@@ -12,6 +12,7 @@ body {
 
 #content {
   align-items: center;
+  justify-content: center;
 }
 
 #content p {
