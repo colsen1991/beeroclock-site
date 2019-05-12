@@ -1,7 +1,7 @@
 /* TEAM */
 Your title: Christer Olsen.
 Location: Bodo, Norway.
-Site: https://www.christerolsen.no
+Site: https://www.christerolsen.me
 Twitter: colsen1991
 GitHub: cosen1991
 LinkedIn: christer-olsen-15845b53
