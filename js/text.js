@@ -3,10 +3,10 @@ const text = (function () {
     const utcHours = time.getUTCHours();
 
     if (utcHours >= 5 && utcHours <= 23) {
-      return timeZoneData[ 17 - utcHours ];
+      return timeZoneData[17 - utcHours];
     }
     else {
-      return timeZoneData[ -7 - utcHours ]
+      return timeZoneData[-7 - utcHours]
     }
   }
 
@@ -15,7 +15,7 @@ const text = (function () {
   }
 
   function getGoogleMapsLink(city, country) {
-    return `https://www.google.com.au/maps/search/${replaceSpacesWithPlus(city)},+${replaceSpacesWithPlus(country)}`;
+    return `https://www.google.com/maps/search/${replaceSpacesWithPlus(city)},+${replaceSpacesWithPlus(country)}`;
   }
 
   function setAnswerAndPhrase(time, timeZoneData) {
