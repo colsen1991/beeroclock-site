@@ -27,7 +27,7 @@ const initData = (function () {
         '1': new TimeZoneData('Tunis', 'Tunisia', 'Fee saḥitkum', 'Arabic'),
         '2': new TimeZoneData('Lilongwe', 'Malawi', 'Tikondwere', 'Chichewa'),
         '3': new TimeZoneData('Moscow', 'Russia', 'Za zdorov\'e', 'Russian'),
-        '4': new TimeZoneData('Tibilisi', 'Georgia', 'Gagimarjos', 'Georgian'),
+        '4': new TimeZoneData('Tbilisi', 'Georgia', 'Gagimarjos', 'Georgian'),
         '5': new TimeZoneData('Tashkent', 'Uzbekistan', 'Oldik', 'Uzbek'),
         '6': new TimeZoneData('Bishkek', 'Kyrgystan', 'Den soolugubuz üchün', 'Kyrgyz'),
         '7': new TimeZoneData('Hanoi', 'Vietnam', 'Chúc sức khoẻ', 'Vietnamese'),
